@@ -1,172 +1,123 @@
 /* Styles généraux */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    color: #fff;
-  }
-  
-  /* Header */
-  header {
-    background-color: #000;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  header h1 {
-    color: #fff;
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin-left: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  /* Section héros */
-  .hero {
-    background-image: url('hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
-    text-align: center;
-  }
-  
-  .hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-  
-  .btn {
-    display: inline-block;
-    background-color: #ff6b6b;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  /* Section "Qui nous sommes ?" */
-  .about {
-    padding: 50px 20px;
-  }
-  
-  .about h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .about p,
-  .about ul {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .about ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-/*Projets*/
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
 
- .Projets {
+header {
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+header h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Section héros */
+.hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Section "Qui nous sommes ?" */
+.about, .Projets, .Formation {
   padding: 50px 20px;
 }
 
-.Projets h2 {
+.about h2, .Projets h2, .Formation h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.Projets p,
-.Projets ul {
+.about p, .about ul, .Projets p, .Projets ul, .Formation p, .Formation ul {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
-.Projets ul {
+.about ul, .Projets ul, .Formation ul {
   list-style-type: disc;
   margin-left: 20px;
 }
 
-/*FORMATION*/
-
- .Formation {
-  padding: 50px 20px;
-}
-
-.Formation h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.Formation p,
-.Formation ul {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+.Formation p, .Formation a {
   color: green;
 }
-.Formation a {
-  color: green;
-  
+
+/* Footer */
+footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
 }
 
-.Formation ul {
-  list-style-type: disc;
-  margin-left: 20px;
+footer p {
+  margin: 0;
 }
 
-
-
-
-  /* Footer */
-  footer {
-    background-color: #000;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
-  /* Animation du logo à la survol */
+/* Animation du logo à la survol */
 .logo-container:hover .logo {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
@@ -192,7 +143,6 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
-
 
 /*DIAGRAMME PARTIE*/
 .diagram-container {
@@ -245,4 +195,98 @@ p {
   color: #555;
   font-size: 16px;
   line-height: 1.5;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .diagram-container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .diagram-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .level1, .level2, .level3, .level4 {
+      padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav li {
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+
+  .hero {
+      padding: 50px 20px;
+  }
+
+  .hero h2 {
+      font-size: 28px;
+  }
+
+  .hero p {
+      font-size: 16px;
+  }
+
+  .btn {
+      padding: 10px 15px;
+      font-size: 14px;
+  }
+
+  .about, .Projets, .Formation {
+      padding: 30px 20px;
+  }
+
+  .about h2, .Projets h2, .Formation h2 {
+      font-size: 20px;
+  }
+
+  .diagram-container {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h2 {
+      font-size: 24px;
+  }
+
+  .hero p {
+      font-size: 14px;
+  }
+
+  .btn {
+      padding: 8px 12px;
+      font-size: 12px;
+  }
+
+  .about h2, .Projets h2, .Formation h2 {
+      font-size: 18px;
+  }
+
+  .level1, .level2, .level3, .level4 {
+      padding: 15px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 14px;
+  }
 }
