@@ -61,3 +61,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// test page accueil :
+
+document.addEventListener('DOMContentLoaded', function() {
+  const videoContainer = document.getElementById('video-container');
+  const video = document.getElementById('hero-video');
+  const welcomeMessage = document.getElementById('welcome-message');
+
+  // Fonction pour arrêter la vidéo et afficher le message de bienvenue
+  function stopVideoAndShowWelcome() {
+    video.pause();
+    videoContainer.style.display = 'none'; // Supprimer complètement le conteneur de la vidéo
+    welcomeMessage.style.opacity = 1; // Afficher le message de bienvenue
+  }
+
+  // Set a timeout to stop the video and show the welcome message after 5 seconds
+  setTimeout(stopVideoAndShowWelcome, 5000); // 5000 milliseconds = 5 seconds
+});
