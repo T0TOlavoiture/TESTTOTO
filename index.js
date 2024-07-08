@@ -77,5 +77,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Set a timeout to stop the video and show the welcome message after 5 seconds
-  setTimeout(stopVideoAndShowWelcome, 5000); // 5000 milliseconds = 5 seconds
+  setTimeout(stopVideoAndShowWelcome, 1000); // 5000 milliseconds = 5 seconds
 });
